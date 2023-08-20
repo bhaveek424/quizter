@@ -8,6 +8,11 @@ import React from 'react';
 
 type Props = {};
 
+export const metadata = {
+  title: 'Dashboard | Quizter',
+  description: 'Quiz yourself on anything!',
+};
+
 const page = async (props: Props) => {
   const session = await getAuthSession();
   if (!session?.user) {

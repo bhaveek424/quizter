@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from '../ui/card';
+import WordCloud from '../WordCloud';
 
 type Props = {};
 
@@ -19,8 +20,7 @@ const HotTopicsCard = (props: Props) => {
         </CardDescription>
       </CardHeader>
       <CardContent className="pl-2">
-        word cloud
-        {/* <WordCloud formattedTopics={formattedTopics} /> */}
+        <WordCloud />
       </CardContent>
     </Card>
   );
